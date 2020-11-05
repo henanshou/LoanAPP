@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">借贷宝</string>
+    <string name="tv_loginactivity_login">登录</string>
+    <string name="welcome">欢迎！</string>
+    <string name="invalid_username">不是合法用户名！</string>
+    <string name="invalid_password">密码必须大于5个字符</string>
+    <string name="login_failed">登录失败</string>
+    <string name="username">用户名：</string>
+    <string name="email">邮箱</string>
+    <string name="password1">密码：</string>
+    <string name="password2">请输入密码</string>
+    <string name="forget">忘记密码</string>
+    <string name="register_1">注册</string>
+    <string name="logout">退出登录</string>
+    <string name="verification_code">验证码：</string>
+    <string name="agreement">注册即代表同意《用户协议》</string>
+    <string name="username_2">请输入邮箱</string>
+    <string name="password_3">请再次输入密码</string>
+    <string name="code_hint">请输入4位验证码</string>
+    <string name="attention">短按查看该贷款详情，右上角菜单项打开贷款计算器，长按选择贷款</string>
+    <string name="counter">贷款计算器</string>
+    <string name="equal_loan_payment">等额本息</string>
+    <string name="equal_principal_payment">等额本金</string>
+    <string name="total_loans">贷款总额（元）：</string>
+    <string name="annual_interest_rate">年利率：</string>
+    <string name="total_years">贷款年数：</string>
+    <string name="month_to_start_repayment">开始还款月份:</string>
+    <string name="monthly_payments">月供：</string>
+    <string name="count">计算</string>
+    <string name="submit">确认贷款</string>
+    <string name="look">查看已贷款</string>
+</resources>

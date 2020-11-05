@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="com.swufe.loanapp.FirstFragment">
+
+    <TextView
+        android:id="@+id/product"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:text="first" />
+    <Button
+        android:id="@+id/purchase"
+        android:textSize="30sp"
+        android:text="@string/submit"
+        android:textColor="@color/font_2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/background_1"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="20dp"
+        android:onClick="onClick" />
+</FrameLayout>

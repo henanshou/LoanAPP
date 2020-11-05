@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">LoanAPP</string>
+    <!-- Strings related to login -->
+
+    <string name="welcome">Welcome!</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="tv_loginactivity_login">Log in</string>
+    <string name="register_1">Register</string>
+    <string name="username">Username:</string>
+    <string name="username_2">Please input E-mail</string>
+    <string name="email">email</string>
+    <string name="password1">Password:</string>
+    <string name="password2">Please input password</string>
+    <string name="forget">forget password</string>
+    <string name="logout">logout</string>
+    <string name="verification_code">Verification code:</string>
+    <string name="agreement">Registration means consent to the user agreement</string>
+    <string name="password_3">Please input password again</string>
+    <string name="code_hint">Please input verification code</string>
+    <string name="attention">Short press to view the loan details, and the menu item in the upper right corner can open the loan calculator</string>
+    <string name="counter">FinanceCounter</string>
+    <string name="equal_loan_payment">equal loan payment</string>
+    <string name="equal_principal_payment">equal principal payment</string>
+    <string name="total_loans">total loans(yuan):</string>
+    <string name="annual_interest_rate">Annual interest rate:</string>
+    <string name="total_years">total years:</string>
+    <string name="month_to_start_repayment">Month to start repayment:</string>
+    <string name="monthly_payments">monthly payments:</string>
+    <string name="count">count</string>
+    <string name="submit">Confirm loan</string>
+    <string name="look">View loans</string>
+</resources>

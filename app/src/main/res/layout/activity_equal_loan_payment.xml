@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--等额本息-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EqualLoanPayment">
+    <RelativeLayout
+        android:id="@+id/top_2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/background_1">
+        <ImageView
+            android:id="@+id/back_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="onClick" />
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/font_2"
+            android:text="@string/equal_loan_payment"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+
+    <!--    ！！！！！！将layout_height设为0dp，设置layout_weight实现均分界面！！！！！！-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/money_textView_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/total_loans" />
+
+        <EditText
+            android:id="@+id/money_2"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/rate_textView_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/annual_interest_rate" />
+
+        <EditText
+            android:id="@+id/yearRate_2"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/totalMonths_textView_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/total_years" />
+
+        <EditText
+            android:id="@+id/totalMonths_2"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+<!--        等额本息第i月月供额，总利息-->
+        <TextView
+            android:id="@+id/monthly_payments_textView_2"
+            android:textColor="@color/selected"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/total_interest_textView_2"
+            android:textSize="20sp"
+            android:textColor="@color/selected"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/count_2"
+            android:onClick="onClick"
+            android:background="@color/background_1"
+            android:textColor="@color/font_2"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/count" />
+    </LinearLayout>
+</LinearLayout>
