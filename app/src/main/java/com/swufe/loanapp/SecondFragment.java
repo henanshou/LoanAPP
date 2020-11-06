@@ -28,20 +28,21 @@ public class SecondFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.second_fragment,container,false);
+        View view = inflater.inflate(R.layout.second_fragment, container, false);
 
         myList_2 = view.findViewById(R.id.myList_2);
-        sharedPreferences_2 = getActivity().getSharedPreferences("purchase",Activity.MODE_PRIVATE);
-        username = sharedPreferences_2.getString("username","");
+        sharedPreferences_2 = getActivity().getSharedPreferences("purchase", Activity.MODE_PRIVATE);
+        username = sharedPreferences_2.getString("username", "");
         arrayList_2 = new ArrayList<>();
 
         dbManager_2 = new DBManager_2(getActivity());
         arrayList = dbManager_2.getAllData_2();
         match = false;
 
+
         for (int i = 0; i < arrayList.size(); i++) {
             Purchase purchase = arrayList.get(i);
-            if(username.equals(purchase.getUsername())){
+            if (username.equals(purchase.getUsername())) {
                 arrayList_2.add(purchase.getPurchase());
             }
         }
@@ -51,3 +52,4 @@ public class SecondFragment extends Fragment {
         return view;
     }
 }
+

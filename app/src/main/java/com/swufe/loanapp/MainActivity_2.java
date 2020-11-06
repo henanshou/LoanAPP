@@ -14,6 +14,8 @@ public class MainActivity_2 extends AppCompatActivity implements View.OnClickLis
     ViewPager viewPager;
     MyPageAdapter pageAdapter;
 
+    TabLayout tabLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,9 @@ public class MainActivity_2 extends AppCompatActivity implements View.OnClickLis
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         pageAdapter = new MyPageAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pageAdapter);
+
+        tabLayout = findViewById(R.id.tabLayout);
+        tabLayout.setupWithViewPager(viewPager);
 
         //这两句和上面不能位置写反了
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tabLayout);

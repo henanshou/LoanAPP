@@ -41,7 +41,7 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
     AlertDialog alertDialog;
     SharedPreferences sharedPreferences;
     SharedPreferences sharedPreferences_2;
-
+    SharedPreferences sharedPreferences_3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -113,6 +113,7 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Log.i(TAG, "onItemClick: running!!!");
         String click = ((TextView)view).getText().toString().trim();//获取点击的item的内容
+
         if(click.equals(product_1)){
             Uri uri = Uri.parse("http://www.ccb.com/cn/personal/credit/consumeloan.html");
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
@@ -167,6 +168,13 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
 //    长按后选择准备贷的贷款，将用户名、贷款加入sharedPreferences_2
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        Log.i(TAG, "onItemLongClick: running");
+//        仅长按选择过贷款才可以显示贷款，显示后就清空click.xml
+        sharedPreferences_3 = getSharedPreferences("click",Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor_2 = sharedPreferences_3.edit();
+        editor_2.putString("longClick","yes");
+        editor_2.commit();
+
         String click = ((TextView)view).getText().toString().trim();//获取点击的item的内容（即产品名称）
         sharedPreferences = getSharedPreferences("user", Activity.MODE_PRIVATE);
         String name = sharedPreferences.getString("username","");
